@@ -1,0 +1,20 @@
+dubbo:
+  application:
+    name: dubbo-provider
+  registry:
+    address: 127.0.0.1:2181
+    protocol: zookeeper
+  protocol:
+    name: dubbo
+    port: 20881
+server:
+  port: 8086
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 1727883570zlm
+    url: jdbc:mysql://localhost:3306/dubbo?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&serverTimezone=UTC&useOldAliasMetadataBehavior=true&rewriteBatchedStatements=true
+mybatis:
+  mapper-locations: classpath:mapping/*.xml
+  type-aliases-package: com.guigu.pojo
